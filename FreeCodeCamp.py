@@ -23,8 +23,10 @@ print(shifted_index)
 #for statement to loop through the word.
 encrypted_text = '' # the encrypted text is an empty string.
 for char in wariors.lower(): #the lower method is used to convert the word to lowercase.
+    if char == " ":
+        encrypted_text += char 
     index = new_word.find(char) # the find method is used to find the index of the letter in the new word.
     #print(char, index) # the print statement is used to print the letter and the index of the letter in the new word.
     new_index = index + shift # the new index is the index of the letter in the new word plus the shift value.
-    new_char = new_word[new_index] # the new char is the new index of the letter in the new word.
-    print("Char:", char, "new_char:", new_char) # the print statement is used to print the new char.
+    
+    print("Char:", char, "encrypted text:", encrypted_text) #the print statement is used to print the letter and the encrypted text.
